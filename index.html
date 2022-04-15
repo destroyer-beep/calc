@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="calculator">
+        <div class="variables">
+            <select class="calculator__select" name="calculator__variables_select" id="variables_select">
+                <option value="var">var</option>
+                <option value="let">let</option>
+                <option value="print">print</option>
+                <option value="printvars">printvars</option>
+            </select>
+            <input id="variables__input_name" class="calculator__input" type="text" placeholder="Variables name">
+            <input id="variables__input_value" class="calculator__input" type="text" placeholder="Variables value">
+            <button id="variables__button" class="calculator__button">Add</button>
+            <div id="variables__dashboard" class="calculator__dashboard"></div>
+        </div>
+        <div class="function">
+            <select class="calculator__select" name="calculator__function_select" id="function_select">
+                <option value="fn">fn</option>
+                <option value="print">print</option>
+                <option value="printfns">printfns</option>
+            </select>
+            <input id="function__input_name" class="calculator__input" type="text" placeholder="function name">
+            <input id="function__input_variable_one" class="calculator__input" type="text" placeholder="Function variable one">
+            <select class="calculator__select" name="calculator__expression_select" id="expression_select">
+                <option value=" "> </option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+                <option value="=">=</option>
+            </select>
+            <input id="function__input_variable_second" class="calculator__input" type="text" placeholder="Function variable second">
+            <button id="function__button" class="calculator__button">Add</button>
+            <div id="function__dashboard" class="calculator__dashboard"></div>
+        </div>
+    </div>
+</div>
+
+<script type='module' src="app/index.js"></script>
+</body>
+</html>
